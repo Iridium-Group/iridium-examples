@@ -1,0 +1,33 @@
+{
+  "name": "iridium-examples",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Runnable examples for the Iridium packages.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iridium-Group/iridium-examples.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --test-timeout=60000 'test/**/*.test.ts'",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@iridium-group/config": "github:Iridium-Group/iridium-config",
+    "@iridium-group/inspector": "github:Iridium-Group/iridium-inspector",
+    "@iridium-group/proxy": "github:Iridium-Group/iridium-proxy",
+    "@iridium-group/transport": "github:Iridium-Group/iridium-transport",
+    "@iridium-group/utils": "github:Iridium-Group/iridium-utils"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "prettier": "^3.10.1",
+    "typescript": "~5.9.3"
+  }
+}
